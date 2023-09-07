@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About Automated Schedule Generator</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF0000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #990000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Automated Schedule Generator</h1>
+    </header>
+
+    <div class="container">
+        <p>
+            Most colleges have a number of different courses, and each course has multiple subjects. With limited faculties, each faculty teaches more than one subject. Creating a timetable that schedules the faculty at provided time slots, ensuring no overlaps, and making the best use of all faculty subject demands is a complex task.
+        </p>
+        <p>
+            The Automated Schedule Generator utilizes a genetic algorithm for this purpose. It involves a timetable object comprising of classroom objects and the timetable for each classroom, along with a fitness score for the timetable. The fitness score indicates the number of clashes the timetable has with other schedules for different classes.
+        </p>
+        <p>
+            The Classroom object consists of week objects, which, in turn, contain days. Each day is divided into time slots, and each time slot is assigned to a specific subject, student group, and teacher.
+        </p>
+        <p>
+            The algorithm is designed to be flexible and easily extendable to add or remove various duties. Constraints are checked between two timetable objects, and if a clash is detected, the score is increased accordingly.
+        </p>
+
+        <p>
+            The Automated Schedule Generator is designed to help educational institutions efficiently manage their schedules, ensuring optimal utilization of faculty and resources while minimizing conflicts and clashes.
+        </p>
+
+        <p>
+            If you are interested in experiencing the benefits of our Automated Schedule Generator, feel free to give it a try!
+        </p>
+
+        <a class="btn" href="/timetable/index.php">Try Automated Schedule Generator</a>
+    </div>
+</body>
+</html>

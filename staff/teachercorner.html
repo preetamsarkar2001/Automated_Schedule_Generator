@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload Form</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Optional: Add more styles to enhance the look of the form */
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Upload Notes Here</h2>
+    
+    <form method ="post" action="upload.php" enctype="multipart/form-data">
+      <label for="fileName">File Name:</label>
+      <input type="text" id="fileName" name="fileName" required>
+
+      <label for="purpose">Purpose of File:</label>
+      <textarea id="purpose" name="purpose" required></textarea>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="chapter">Chapter Name:</label>
+      <input type="text" id="chapter" name="chapter" required>
+
+      <label for="uploadedFile">Upload File:</label>
+      <input type="file" id="uploadedFile" name="uploadedFile" required>
+
+      <input type="submit" value="Upload File" name="submit" onclick="validate()">
+    </form>
+  </div>
+  <script>
+    function validate(){
+        alert("File Uploaded Successfully");
+    }
+    </script>
+</body>
+</html>
